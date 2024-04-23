@@ -1,0 +1,42 @@
+# https://alacritty.org/config-alacritty.html
+
+import = ["~/.config/color-theme.toml"]
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+decorations = "transparent"
+opacity = 0.97 
+startup_mode = "Maximized"
+padding = { x = 15, y = 15 }
+
+[env]
+TERM = "alacritty"
+# ZDOTDIR = "~/.config/zsh"
+
+# [bell]
+# color = "#003300"
+# duration = 32
+
+[font]
+size = 13
+offset = { x = 1, y = 1}
+normal = { family = "FiraMono Nerd Font Mono", style = "Regular" }
+bold = { style = "Bold" }  # Inherits family from normal, Default style: Bold
+italic = { style = "Italic" }  # Inherits family from normal, Default style: Italic
+bold_italic = { style = "Bold Italic" }  # Inherits family from normal, Default style: Bold Italic
+
+[selection]
+save_to_clipboard = false
+
+[cursor]
+style = { shape = "Block", blinking = "On" } 
+
+[terminal]
+osc52 = "CopyPaste"
+
+[mouse]
+hide_when_typing = true
+
+
